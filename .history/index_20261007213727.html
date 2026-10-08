@@ -1,3 +1,5 @@
+// I am making a simple game that basically tracks your reaction time using some logical aspects tooo.
+
 <body id=b style="margin:0;
 height:100vh;
 font: 40px Arial, sans-serif
@@ -27,13 +29,13 @@ monospace;color:white;background:rgb(61, 61, 249);text-align:center;">
             else if (state === "waiting") {
                 clearTimeout(timer);
                 state = "idle";
-                b.style.background = "orange";
+                b.style.background = "blue";
                 t.textContent = "BRUHH, you clicked it too soon!😡 Click to try again.";
 
             } else {
                 let ms = Math.round(performance.now() - startTime);
                 state = "idle";
-                b.style.background = "purple";
+                b.style.background = "blue";
                 t.textContent = ms + " ms. Click to try again.";
             }
         };
